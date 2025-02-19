@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Matemática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <h2>Resolva a Conta:</h2>
+        <p id="pergunta"></p>
+        <input type="number" id="resposta" placeholder="Digite sua resposta">
+        <button onclick="verificarResposta()">Verificar</button>
+        <br>
+        <p id="pontuacao">Pontuação: 0</p>
+        <label for="dificuldade">Escolha a dificuldade:</label>
+        <select id="dificuldade" onchange="selecionarDificuldade(this.value)">
+            <option value="">Selecione</option>
+            <option value="facil">Fácil</option>
+            <option value="normal">Normal</option>
+            <option value="dificil">Difícil</option>
+        </select>
+        <br>
+        <img id="jpg" src="" alt="" style="display: none;">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
